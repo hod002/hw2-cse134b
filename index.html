@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="someIconURL">
+    <link rel="icon" href="https://www.flaticon.com/svg/vstatic/svg/3870/3870596.svg?token=exp=1611712824~hmac=149c23fc4ec5153e267674e7b4ec1ea1">
     <title>Hoang-Anthony Dinh's Portfolio</title>
     <style>
         table,
@@ -29,11 +29,9 @@
             <h1>Hoang-Anthony Dinh's Portfolio</h1>
             <nav>
                 <ul>
-                    <em>
-                        <li><a href="#languages">Languages learned</a></li>
-                        <li><a href="#classes">Classes taken</a></li>
-                        <li><a href="#links">Contact links</a></li>
-                    </em>
+                    <li><a href="#languages"><em>Languages learned</em></a></li>
+                    <li><a href="#classes"><em>Classes taken</em></a></li>
+                    <li><a href="#links"><em>Contact links</em></a></li>
                 </ul>
             </nav>
         </header>
@@ -44,13 +42,17 @@
         <section id="aboutme">
             <h2>About me</h2>
             <pre>   I am a Computer Engineering student at University of California, San Diego.
-                    Currently, I am most interested in the Computer Science aspect of Computer
-                    Engineering </br> -- more specifically software engineering, including web devepment,
-                    and machine learning.
+    Currently, I am most interested in the Computer Science aspect of Computer
+    Engineering -- more specifically software engineering, including web devepment,
+    and machine learning.
             </pre>
 
             <aside>
                 <!-- picture here -->
+                <picture>
+                    <source media="(max-width: 800px)" srcset="dog.jpg">
+                    <img src="dogresized.jpg" width="200" height="220">
+                </picture>
             </aside>
         </section>
 
@@ -59,13 +61,11 @@
             <h3>Languages I've learned</h3>
             <div>
                 <ol>
-                    <strong>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>ARM Assembly</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                    </strong>
+                    <li><strong>C</strong></li>
+                    <li><strong>C++</strong></li>
+                    <li><strong>ARM Assembly</strong></li>
+                    <li><strong>Java</strong></li>
+                    <li><strong>Python</strong></li>
                 </ol>
             </div>
         </section>
@@ -75,56 +75,63 @@
             <h3>CSE Classes</h3>
             <div>
                 <ul>
-                    <i>
-                        <li>Computer Organization and Systems Programming</li>
-                        <li>Advanced Data Structures</li>
-                        <li>Design and Analysis of Algorithms</li>
-                        <li>Components and Design Techniques for Digital Systems</li>
-                        <li>Web Client Languages (currently)</li>
-                        <li>Software Engineering (currently)</li>
-                    </i>
+                    <li><i>Computer Organization and Systems Programming</i></li>
+                    <li><i>Advanced Data Structures</i></li>
+                    <li><i>Design and Analysis of Algorithms</i></li>
+                    <li><i>Components and Design Techniques for Digital Systems</i></li>
+                    <li><i>Web Client Languages (currently)</i></li>
+                    <li><i>Software Engineering (currently)</i></li>
                 </ul>
 
-                <table>
-                    <caption><i><b>What I learned from classes at UCSD</b></i></caption>
+                <details>
+                    <summary>What I learned from classes at UCSD</summary>
 
-                    <!-- tr for rows, td for each element in row -->
-                    <tr>
-                        <th>Class</th>
-                        <th>Concepts</th>
-                    </tr>
+                    <table>
+                        <caption><i><b>What I learned from classes at UCSD</b></i></caption>
+                        <colgroup>
+                            <col style="background-color: azure">
+                            <col>
+                        </colgroup>
 
-                    <tr>
-                        <td>Computer Organization and Systems Programming</td>
-                        <td>Learned C, ARM, and how data is accessed/stored</td>
-                    </tr>
+                        <!-- tr for rows, td for each element in row -->
+                        <tr>
+                            <th>Class</th>
+                            <th>Concepts</th>
+                        </tr>
 
-                    <tr>
-                        <td>Advanced Data Structures</td>
-                        <td>Learned how, where, and why to use various data structures</td>
-                    </tr>
+                        <tr>
+                            <td>Computer Organization and Systems Programming</td>
+                            <td>Learned C, ARM, and how data is accessed/stored</td>
+                        </tr>
 
-                    <tr>
-                        <td>Design and Analysis of Algorithms</td>
-                        <td>Learned about various algorithms and how to write them</td>
-                    </tr>
+                        <tr>
+                            <td>Advanced Data Structures</td>
+                            <td>Learned how, where, and why to use various data structures</td>
+                        </tr>
 
-                    <tr>
-                        <td>Components and Design Techniques for Digital Systems</td>
-                        <td>Learned about various data structures and how to implement them</td>
-                    </tr>
+                        <tr>
+                            <td>Design and Analysis of Algorithms</td>
+                            <td>Learned about various algorithms and how to write them</td>
+                        </tr>
 
-                    <tr>
-                        <td>Web Client Languages (currently)</td>
-                        <td>Learning fundamentals of successful web development</td>
-                    </tr>
+                        <tr>
+                            <td>Components and Design Techniques for Digital Systems</td>
+                            <td>Learned about various data structures and how to implement them</td>
+                        </tr>
 
-                    <tr>
-                        <td>Software Engineering (currently)</td>
-                        <td>Learning core concepts of software engineering and the process of software development</td>
-                    </tr>
+                        <tr>
+                            <td>Web Client Languages (currently)</td>
+                            <td>Learning fundamentals of successful web development</td>
+                        </tr>
 
-                </table>
+                        <tr>
+                            <td>Software Engineering (currently)</td>
+                            <td>Learning core concepts of software engineering and the process of software development
+                            </td>
+                        </tr>
+
+                    </table>
+                </details>
             </div>
         </section>
         <hr>
@@ -141,11 +148,9 @@
             </nav>
         </section>
 
-        <!-- Code, span, and q -->
+        <!-- Code, span -->
         <div>
             <p><span style="color: blue">Press </span><code>F12</code></p>
-
-            <q></q>
         </div>
     </main>
 

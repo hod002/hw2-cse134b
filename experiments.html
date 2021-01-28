@@ -46,29 +46,27 @@
     </div>
 
     <!-- iframe -->
-    <div>
-        <iframe src="index.html" title="About Me" width="800" height="500"></iframe>
-        <p>&nbsp;</p>
-    </div>
+    <iframe src="index.html" title="About Me" width="800" height="500"></iframe>
+    <p>&nbsp;</p>
 
-    <!-- audio and video -->
-    <div>
-        <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-        </audio>
+    <!-- audio -->
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
 
-        <video controls>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-        <p>&nbsp;</p>
-    </div>
+    <!-- video -->
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <p>&nbsp;</p>
+
+    <!-- image for canvas -->
+    <p>
+        <img alt="icon" id="pic" width="20" height="20" src="https://static.thenounproject.com/png/3063341-200.png">
+    </p>
 
     <!-- canvas -->
     <div>
-        <p>
-            <img alt="icon" id="pic" width="20" height="20" src="https://static.thenounproject.com/png/3063341-200.png">
-        </p>
-
         <canvas id="testCanvas" width="500" height="200" style="border:1px solid black;"></canvas>
         <script>
             function paintCanvas() {
@@ -82,17 +80,14 @@
                 pen.fill();
             }
         </script>
-
         <button onclick="paintCanvas()">Paint Canvas</button>
     </div>
 
     <!-- svg -->
-    <div>
-        <svg width="200" height="200">
-            <circle cx="100" cy="100" r="70" stroke="blue" fill="orange" stroke-width="10"/>
-            <rect width="40" height="20" stroke="red" fill="blue"></rect>
-        </svg>
-    </div>
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="70" stroke="blue" fill="orange" stroke-width="10" />
+        <rect width="40" height="20" stroke="red" fill="blue"></rect>
+    </svg>
 
 </body>
 
